@@ -1,5 +1,15 @@
+
+
+export const metadata = {
+  title: 'Lee',
+};
+
 const Home = () => {
-	return <div>Hi Lee@Next.js!</div>;
+	return (
+  <div>
+    <h1>Lee</h1>
+  </div>
+  );i
 };
 
 export default Home;
