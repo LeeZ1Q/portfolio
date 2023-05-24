@@ -12,7 +12,7 @@ const NavBar = () => {
 			</Link>
 			<nav className={styles.nav}>
 				{/* Mobile Icon */}
-				<Link href="/">
+				<Link href="/blog">
 					<span className={`iconfont ${styles.mobile} ${styles.icon}`}>
 						&#xe634;
 					</span>
@@ -25,7 +25,7 @@ const NavBar = () => {
 
 				{/* Laptop Link */}
 				<Link
-					href="/"
+					href="/blog"
 					className={`${styles.link} ${styles.laptop}`}
 				>
 					Blog
