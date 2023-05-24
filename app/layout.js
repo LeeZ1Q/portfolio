@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
-import NavBar from './NavBar';
-import './global.css'
+import NavBar from './components/NavBar';
+import './styles/global.css'
 
 export default function RootLayout({ children }) {
 	return (

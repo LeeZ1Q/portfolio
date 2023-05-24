@@ -1,4 +1,6 @@
-import Avatar from "./Avatar";
+import Avatar from "./components/Home/Avatar";
+import Wrapper from "./components/Wrapper";
+import Content from "./components/Home/Content";
 
 export const metadata = {
   title: 'Lee',
@@ -7,7 +9,10 @@ export const metadata = {
 const Home = () => {
 	return (
   <div>
-    <Avatar />
+    <Wrapper>
+      <Avatar />
+      <Content />
+    </Wrapper>
   </div>
   );i
 };
