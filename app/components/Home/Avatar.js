@@ -11,6 +11,7 @@ const Avatar = () => {
 				src="/avatar.jpg"
 				alt="Avatar"
 				className={styles.avatar}
+				priority
         width={100} 
         height={100}
 			/>

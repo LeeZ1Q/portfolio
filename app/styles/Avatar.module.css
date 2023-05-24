@@ -10,11 +10,11 @@
 
 .description {
   position: relative;
-  bottom: 3px;
+  bottom: 9px;
 }
 
 .name {
-  font-size: 35px;
+  font-size: 38px;
   font-weight: 600;
   color: var(--element3);
   margin-bottom: 0;
@@ -23,11 +23,30 @@
 
 .tag {
   color: var(--element1);
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 6px;
   margin-left: 1px;
 }
 
 .out {
   opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 31px;
+  }
+
+  .tag {
+    font-size: 13px;
+    max-width: 140px;
+  }
+
+  .description {
+    bottom: 10px;
+  }
+  
+  .container {
+    gap: 15px;
+  }
 }
