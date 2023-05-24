@@ -1,4 +1,4 @@
-
+import Avatar from "./Avatar";
 
 export const metadata = {
   title: 'Lee',
@@ -7,7 +7,7 @@ export const metadata = {
 const Home = () => {
 	return (
   <div>
-    <h1>Lee</h1>
+    <Avatar />
   </div>
   );i
 };

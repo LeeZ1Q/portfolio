@@ -17,6 +17,7 @@
   align-items: center;
   gap: 22px;
   font-size: 16px;
+  font-weight: 500
 }
 
 .icon {
@@ -26,7 +27,7 @@
 }
 
 .icon:hover {
-  color: var(--element3);
+  color: var(--element2);
 }
 
 .link {
@@ -34,7 +35,7 @@
 }
 
 .link:hover {
-  color: var(--element3);
+  color: var(--element2);
 }
 
 .mobile {
@@ -55,7 +56,7 @@
   }
 
   .container {
-    padding: 25px;
+    padding: 10px 25px;
   }
 
   .nav {
