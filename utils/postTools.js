@@ -16,7 +16,6 @@ export const getSortedPostsData = async () => {
 		// Use gray-matter to parse the post metadata section
 		const { data, content } = matter(fileContents);
 		// Combine the data with the id
-    console.log(data);
 		return {
 			slug,
 			...data,
@@ -34,5 +33,24 @@ export const getSortedPostsData = async () => {
 		}
 	});
 };
+
+export const getAllPostSlugs = async () => {
+	const postsDirectory = path.join(process.cwd(), "public", "posts");
+	const filenames = await fsPromise.readdir(postsDirectory);
+
+	return filenames.map((filename) => {
+		return {
+				slug: filename.replace(/\.md$/, ""),
+		};
+	});
+}
+
+export const getPostBySlug = async (slug) => {
+  return slug;
+};
+
+
+
+
 
 
