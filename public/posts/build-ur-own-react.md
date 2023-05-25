@@ -6,8 +6,6 @@ date: 2023-04-24
 
 ---
 
-# Build your own react
-
 ## 步骤
 
 - **Step I**: The `createElement` Function

@@ -1,11 +1,15 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
-import NavBar from './components/NavBar';
-import './styles/global.css'
+import NavBar from "./components/NavBar";
+import "./styles/global.css";
+import "./styles/markdown.css";
 
 export default function RootLayout({ children }) {
 	return (
-		<html className='layout' color-mode='light'>
+		<html
+			className="layout"
+			color-mode="light"
+		>
 			<Head>
 				<link
 					rel="preconnect"
@@ -22,11 +26,9 @@ export default function RootLayout({ children }) {
 				/>
 			</Head>
 			<body>
-        <NavBar />
-        {children}
-      </body>
+				<NavBar />
+				{children}
+			</body>
 		</html>
 	);
-}  
-
-
+}

@@ -64,7 +64,7 @@ jsx是js语法层面的扩展
 
 react里，map()方法经常用来把每一个元素变成jsx
 
-```react
+```jsx
 let array = ['Hello','React','JSX','Components']
 
 function App() {
@@ -105,7 +105,7 @@ React 里需要 key 和文件夹里的文件需要有文件名的道理是类似
 
 抽离出一个List组件 
 
-```React
+```jsx
 function List(){
   return(
       <div>
@@ -163,7 +163,7 @@ React DOM 把 React 和 HTML （index.html）连接起来
 
 箭头函数好！ 碰到this丢失再说！
 
-```react
+```jsx
 const App = () => {
   // perform a task in between
 
@@ -187,7 +187,7 @@ synthetic event是对原生事件的包装，有些默认事件是需要禁止�
 
 **传函数，而不是函数返回值，除非返回值是函数**
 
-```react
+```jsx
 const handleChange = (e) => {
   console.log(e);
   console.log(e.currentTarget);
@@ -216,7 +216,7 @@ const Search = () => {
 
 只能从上往下传 父到子 
 
-```react
+```jsx
 const App = () => {
   const stories = [...];
   return (
@@ -266,7 +266,7 @@ const Item = ({title, author, url}) => {
 
 `useState` （是个hook），告诉React这变量是个状态值，帮我盯着它
 
-```react
+```jsx
 const Search = () => {
   const [searchTerm, setSearchTerm] = React.useState('');
   const handleChange = (e) => {

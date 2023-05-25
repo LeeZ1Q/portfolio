@@ -3,6 +3,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { format } from "date-fns";
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeDocument from 'rehype-document';
+import rehypeFormat from 'rehype-format';
+import rehypeStringify from 'rehype-stringify';
 
 export const getSortedPostsData = async () => {
 	const postsDirectory = path.join(process.cwd(), "public", "posts");
@@ -46,8 +53,28 @@ export const getAllPostSlugs = async () => {
 }
 
 export const getPostBySlug = async (slug) => {
-  return slug;
+  const postDirectory = path.join(process.cwd(), "public", "posts", `${slug}.md`);
+	const fileContents = fs.readFileSync(postDirectory, "utf8");
+	const { data, content } = matter(fileContents);
+	const result = await unified()
+		.use(remarkParse)
+		.use(remarkRehype)
+		.use(rehypeHighlight)
+		.use(rehypeDocument)
+		.use(rehypeFormat)
+		.use(rehypeStringify)
+		.process(content);
+	const htmlContent = result.value;
+	return {
+		slug,
+		date: format(data.date, "MMMM dd, yyyy"),
+		title: data.title,
+		htmlContent,
+	};
 };
+	
+	
+
 
 
 
