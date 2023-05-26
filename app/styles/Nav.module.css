@@ -27,7 +27,7 @@
 }
 
 .icon:hover {
-  color: var(--element2);
+  color: var(--element3);
 }
 
 .link {
@@ -35,7 +35,7 @@
 }
 
 .link:hover {
-  color: var(--element2);
+  color: var(--element3);
 }
 
 .mobile {

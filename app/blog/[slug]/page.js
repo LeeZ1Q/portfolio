@@ -1,6 +1,7 @@
 import Wrapper from "../../components/Wrapper";
 import { getAllPostSlugs, getPostBySlug } from "../../../utils/postTools";
 import styles from "../../styles/Markdown.module.css";
+import Cd from "../../components/Cd";
 
 //todo: add metadata to post
 export const metadata = {
@@ -18,6 +19,7 @@ const Post = async ({ params }) => {
 			<article className="md">
 				<div dangerouslySetInnerHTML={{ __html: post.htmlContent }} />
 			</article>
+			<Cd />
 		</Wrapper>
 	);
 };

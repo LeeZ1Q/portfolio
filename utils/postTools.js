@@ -3,13 +3,14 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { format } from "date-fns";
-import { unified } from 'unified';
-import remarkParse from 'remark-parse';
-import remarkRehype from 'remark-rehype';
-import rehypeHighlight from 'rehype-highlight';
-import rehypeDocument from 'rehype-document';
-import rehypeFormat from 'rehype-format';
-import rehypeStringify from 'rehype-stringify';
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import rehypeHighlight from "rehype-highlight";
+import rehypeDocument from "rehype-document";
+import rehypeFormat from "rehype-format";
+import rehypeStringify from "rehype-stringify";
+import remarkGfm from "remark-gfm";
 
 export const getSortedPostsData = async () => {
 	const postsDirectory = path.join(process.cwd(), "public", "posts");
@@ -47,17 +48,23 @@ export const getAllPostSlugs = async () => {
 
 	return filenames.map((filename) => {
 		return {
-				slug: filename.replace(/\.md$/, ""),
+			slug: filename.replace(/\.md$/, ""),
 		};
 	});
-}
+};
 
 export const getPostBySlug = async (slug) => {
-  const postDirectory = path.join(process.cwd(), "public", "posts", `${slug}.md`);
+	const postDirectory = path.join(
+		process.cwd(),
+		"public",
+		"posts",
+		`${slug}.md`
+	);
 	const fileContents = fs.readFileSync(postDirectory, "utf8");
 	const { data, content } = matter(fileContents);
 	const result = await unified()
 		.use(remarkParse)
+		.use(remarkGfm)
 		.use(remarkRehype)
 		.use(rehypeHighlight)
 		.use(rehypeDocument)
@@ -72,12 +79,3 @@ export const getPostBySlug = async (slug) => {
 		htmlContent,
 	};
 };
-	
-	
-
-
-
-
-
-
-

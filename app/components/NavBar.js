@@ -26,6 +26,12 @@ const NavBar = () => {
 
 				{/* Laptop Link */}
 				<Link
+					href="/"
+					className={`${styles.link} ${styles.laptop}`}
+				>
+					Me
+				</Link>
+				<Link
 					href="/blog"
 					className={`${styles.link} ${styles.laptop}`}
 				>
