@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Nav.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
 	return (
@@ -54,9 +55,7 @@ const NavBar = () => {
 				>
 					&#xe66d;
 				</Link>
-				<Link href="/">
-					<span className={`iconfont ${styles.icon}`}>&#xe635;</span>
-				</Link>
+				<ThemeToggle />
 			</nav>
 		</div>
 	);

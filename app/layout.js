@@ -3,13 +3,11 @@ import Head from "next/head";
 import NavBar from "./components/NavBar";
 import "./styles/global.css";
 import "./styles/markdown.css";
+import { Providers } from "./theme-provider";
 
 export default function RootLayout({ children }) {
 	return (
-		<html
-			className="layout"
-			color-mode="light"
-		>
+		<html>
 			<Head>
 				<link
 					rel="preconnect"
@@ -26,8 +24,10 @@ export default function RootLayout({ children }) {
 				/>
 			</Head>
 			<body>
-				<NavBar />
-				{children}
+				<Providers>
+					<NavBar />
+					{children}
+				</Providers>
 			</body>
 		</html>
 	);
