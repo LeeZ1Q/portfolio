@@ -3,10 +3,14 @@ import { getAllPostSlugs, getPostBySlug } from "../../../utils/postTools";
 import styles from "../../styles/Markdown.module.css";
 import Cd from "../../components/Cd";
 
-//todo: add metadata to post
-export const metadata = {
-	title: `Lee's Blog`,
-};
+export async function generateMetadata({ params }) {
+	const { slug } = params;
+	const post = await getPostBySlug(slug);
+
+	return {
+		title: post.title,
+	};
+}
 
 const Post = async ({ params }) => {
 	const { slug } = params;

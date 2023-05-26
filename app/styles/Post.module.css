@@ -1,17 +1,18 @@
 .post {
   cursor: pointer;
-  margin-bottom: 35px;
-
+  margin-bottom: 30px;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   color: var(--element1);
   transition: 0.3s;
 }
 
 .date {
-  font-size: 14px;
+  margin-top: 5px;
+  font-size: 16px;
   color: var(--element4);
   transition: 0.3s;
 }

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import Head from "next/head";
+
 import NavBar from "./components/NavBar";
 import "./styles/global.css";
 import "./styles/markdown.css";
@@ -8,7 +8,7 @@ import { Providers } from "./theme-provider";
 export default function RootLayout({ children }) {
 	return (
 		<html>
-			<Head>
+			<head>
 				<link
 					rel="preconnect"
 					href="https://fonts.googleapis.com"
@@ -19,10 +19,11 @@ export default function RootLayout({ children }) {
 					crossOrigin
 				/>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@300;400;500;600&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Caveat&family:wght@500&display=swap"
 					rel="stylesheet"
 				/>
-			</Head>
+				
+			</head>
 			<body>
 				<Providers>
 					<NavBar />
