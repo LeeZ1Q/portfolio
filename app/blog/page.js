@@ -4,7 +4,7 @@ import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer";
 
 export const metadata = {
-	title: `Lee's Blog`,
+	title: "Blog - Lee",
 };
 
 const blog = async () => {

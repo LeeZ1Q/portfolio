@@ -5,13 +5,14 @@
 
 .stress {
   font-size: 16px;
+  font-weight: bold;
   color: var(--element3);
 }
 
 
 .textLink {
   font-size: 16px;
+  font-weight: bold;
   color: var(--element3);
-  text-decoration: underline;
-  text-decoration-color: var(--element2);
+  border-bottom: 1px solid  var(--element8);
 }

@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 					crossOrigin="true"
 				/>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Caveat&family:wght@500&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Caveat&family:wght@500&family=IBM+Plex+Sans:wght@400&display=swap"
 					rel="stylesheet"
 				/>
 			</head>

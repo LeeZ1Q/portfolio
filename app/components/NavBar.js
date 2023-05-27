@@ -18,7 +18,7 @@ const NavBar = () => {
 						&#xe634;
 					</span>
 				</Link>
-				<Link href="/">
+				<Link href="/project">
 					<span className={`iconfont ${styles.mobile} ${styles.icon}`}>
 						&#xe650;
 					</span>
@@ -38,7 +38,7 @@ const NavBar = () => {
 					Blog
 				</Link>
 				<Link
-					href="/"
+					href="/project"
 					className={`${styles.link} ${styles.laptop}`}
 				>
 					Projects

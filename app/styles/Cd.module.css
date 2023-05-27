@@ -6,11 +6,10 @@
 .link {
   font-size: 16px;
   color: var(--element2);
-  text-decoration: underline;
-  text-decoration-color: var(--element2);
+  border-bottom: 1px solid  var(--element2);
 }
 
 .link:hover {
   color: var(--element3);
-  text-decoration-color: var(--element3);
+  border-color: var(--element3);
 }
