@@ -1,6 +1,7 @@
 import Wrapper from "../components/Wrapper";
 import styles from "../styles/Project.module.css";
 import Item from "../components/Project/Item";
+import Footer from "../components/Footer";
 
 export const metadata = {
 	title: "Project - Lee",
@@ -59,6 +60,7 @@ const Project = () => {
 					/>
 				</div>
 			</div>
+			<Footer />
 		</Wrapper>
 	);
 };
