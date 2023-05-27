@@ -10,7 +10,8 @@ const ThemeToggle = () => {
 
 	useEffect(() => setMounted(true), []);
 
-	if (!mounted) return null;
+	if (!mounted)
+		return <span className={`iconfont ${styles.icon} loading`}> &#xe635;</span>;
 
 	const toggleTheme = () => {
 		if (theme === "light") {

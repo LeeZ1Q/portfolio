@@ -16,13 +16,12 @@ export default function RootLayout({ children }) {
 				<link
 					rel="preconnect"
 					href="https://fonts.gstatic.com"
-					crossOrigin
+					crossOrigin="true"
 				/>
 				<link
 					href="https://fonts.googleapis.com/css2?family=Caveat&family:wght@500&display=swap"
 					rel="stylesheet"
 				/>
-				
 			</head>
 			<body>
 				<Providers>

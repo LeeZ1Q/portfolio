@@ -1,7 +1,8 @@
 .title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--element3);
+  margin-bottom: 15px;
 }
 
 .date {
@@ -9,5 +10,5 @@
   color: var(--element4);
   transition: 0.3s;
   margin: 5px 0;
-  text-align: end;
+  text-align: start;
 }

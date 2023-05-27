@@ -23,7 +23,10 @@
 .icon {
   font-size: 25px;
   cursor: pointer;
-  transition: 0.3s;
+}
+
+.iconfont.loading {
+  opacity: 0;
 }
 
 .icon:hover {

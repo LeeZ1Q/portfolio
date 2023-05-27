@@ -1,4 +1,3 @@
-import Wrapper from "../Wrapper";
 import Post from "./Post";
 import styles from "../../styles/Blog.module.css";
 
@@ -16,7 +15,7 @@ function getYears() {
 
 const Content = ({ posts }) => {
 	return (
-		<Wrapper>
+		<>
 			{getYears().map((year) => (
 				<>
 					<p
@@ -37,7 +36,7 @@ const Content = ({ posts }) => {
 						))}
 				</>
 			))}
-		</Wrapper>
+		</>
 	);
 };
 
