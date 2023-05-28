@@ -46,13 +46,13 @@ store 是一个 JavaScript 对象，具有一些特殊的功能和能力，使�
 
 1. 首先定义一个初始 **state** 值来描述应用程序
 
-2. 接着，我们定义一个 **reducer** 方法。 接收俩参数， 当前的 `state` 和一个描述发生了什么的 `action` 对象。 当 Redux 应用启动时，我们还没有任何状态，所以我们提供一个 ==`initialState` 作为该 reducer 的默认值==。
+2. 接着，我们定义一个 **reducer** 方法。 接收俩参数， 当前的 `state` 和一个描述发生了什么的 `action` 对象。 当 Redux 应用启动时，我们还没有任何状态，所以我们提供一个 `initialState` 作为该 reducer 的默认值。
 
-3. 通过调用 Redux 库 `createStore` API 来创建一个 **store** 实例。==将 reducer 函数传递给 "createStore"，它使用 reducer 函数生成初始状态，并计算任何未来的更新==。
+3. 通过调用 Redux 库 `createStore` API 来创建一个 **store** 实例。将 reducer 函数传递给 "createStore"，它使用 reducer 函数生成初始状态，并计算任何未来的更新。
 
 4. 编写一个 render 函数，该函数知道使用 `store.getState()` 方法从 Redux store 中获取最新状态，然后获取该值并更新 UI 以显示它。
 
-   Redux store 允许我们调用 `store.subscribe()` 方法，并传递一个订阅者回调函数，该函数将在每次更新 store 时调用。==因此，我们可以将 `render` 函数作为订阅者传递，并且知道每次 store 更新时，我们都可以使用最新值更新 UI==。
+   Redux store 允许我们调用 `store.subscribe()` 方法，并传递一个订阅者回调函数，该函数将在每次更新 store 时调用。因此，我们可以将 `render` 函数作为订阅者传递，并且知道每次 store 更新时，我们都可以使用最新值更新 UI。
 
 #### Dispatching Actions
 
@@ -162,7 +162,7 @@ Redux 的**基本思想**：应用中**使用集中式的全局状态来管理�
     - 仅根据 `state` 和 `action` 参数计算新状态
     - 永远不要改变现有的 `state` - 总是返回一个副本
     - 不要有像 AJAX 调用或异步逻辑这样的“副作用”
-- Reducers 应该被==拆分==以使它们更易于阅读
+- Reducers 应该被拆分以使它们更易于阅读
   - Reducer 通常根据顶级状态键或状态“ slices ”进行拆分
   - Reducers 通常写在“ slice ”文件中，组织成“ feature ”文件夹
   - Reducers 可以与 Redux `combineReducers` 函数结合使用
@@ -222,7 +222,7 @@ function createStore(reducer, preloadedState) {
 }
 ```
 
-这个小版本的 Redux store 运行良好，你可以使用这个自己编写的 `createStore` 函数替换实际的 Redux `createStore` 函数（实际的 Redux 存储实现更长，更复杂，==但是其中大部分是评论信息、警告信息和一些极端情况的处理==）。
+这个小版本的 Redux store 运行良好，你可以使用这个自己编写的 `createStore` 函数替换实际的 Redux `createStore` 函数（实际的 Redux 存储实现更长，更复杂，但是其中大部分是评论信息、警告信息和一些极端情况的处理）。
 
 如你所见，这里的实际逻辑相当短：
 
@@ -258,7 +258,7 @@ Redux 使用一种称为 **middleware** 的特殊插件来让我们自定义 `di
 
 **Middleware 围绕 store 的 `dispatch` 方法形成pipeline**
 
-==*不像*  reducer，**middleware 内部可能有副作用**，包括超时和其他异步逻辑==
+*不像*  reducer，**middleware 内部可能有副作用**，包括超时和其他异步逻辑
 
 我们可以用中间件做很多事！
 

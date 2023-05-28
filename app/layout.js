@@ -1,28 +1,25 @@
 /* eslint-disable @next/next/no-page-custom-font */
-
 import NavBar from "./components/NavBar";
 import "./styles/global.css";
 import "./styles/markdown.css";
 import { Providers } from "./theme-provider";
 
+import { IBM_Plex_Sans, Caveat } from "next/font/google";
+
+const ibm = IBM_Plex_Sans({
+	subsets: ["latin"],
+	weight: "400",
+	variable: "--font-ibm",
+});
+
+const cav = Caveat({
+	subsets: ["latin"],
+	variable: "--font-cav",
+});
+
 export default function RootLayout({ children }) {
 	return (
-		<html>
-			<head>
-				<link
-					rel="preconnect"
-					href="https://fonts.googleapis.com"
-				/>
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossOrigin="true"
-				/>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Caveat&family:wght@500&family=IBM+Plex+Sans:wght@400&display=swap"
-					rel="stylesheet"
-				/>
-			</head>
+		<html className={`${ibm.variable} ${cav.variable}`}>
 			<body>
 				<Providers>
 					<NavBar />

@@ -8,7 +8,7 @@
 
 .signature {
   font-size: 40px;
-  font-family: 'Caveat', cursive;
+  font-family:  var(--font-cav), cursive;
   margin-right: auto;
 }
 

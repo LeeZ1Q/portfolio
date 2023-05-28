@@ -10,7 +10,7 @@ date: 2023-04-06
 
 SPA Single-page applications 单页面 1个html
 
-现代JS 从服务器到客服端 ==减少服务器的压力==
+现代JS 从服务器到客服端 减少服务器的压力
 
 ## requirements
 
