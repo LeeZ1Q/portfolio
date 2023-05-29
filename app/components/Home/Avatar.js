@@ -12,8 +12,8 @@ const Avatar = () => {
 				alt="Avatar"
 				className={styles.avatar}
 				priority
-        width={100} 
-        height={100}
+        width={115} 
+        height={115}
 			/>
 			<div className={styles.description}>
 				<h1

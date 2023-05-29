@@ -1,9 +1,8 @@
 .year {
-  font-size: 30px;
+  font-size: 2rem;
   color: var(--element4);
   text-align: start;
-  margin-bottom: 15px;
-  margin-right: 40px;
+  margin-bottom: 1.125rem;
 }
 
 @media screen and (max-width: 600px) {

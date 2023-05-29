@@ -2,7 +2,7 @@
 .md p,
 .md ul,
 .md ol {
-  font-size: 16px;
+  font-size: 1.125rem;
   line-height: 27px;
   color: var(--element1);
 }
@@ -29,7 +29,7 @@
 
 .md h5,
 .md h6 {
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 .md h1,
@@ -49,7 +49,7 @@
 
 .md code {
   background-color: var(--hljs0);
-  padding: 3px;
+  padding: 2px;
   margin: 0 2px;
   border-radius: 5px;
   font-family: var(--font-ibm), sans-serif;

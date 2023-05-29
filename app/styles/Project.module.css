@@ -14,19 +14,19 @@
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 2rem;
   color: var(--element8);
   transition: color 0.3s;
 }
 
 .name {
-  font-size: 21px;
+  font-size: 1.5rem;
   color: var(--element2);
   transition: color 0.3s;
 }
 
 .description {
-  font-size: 14px;
+  font-size: .875rem;
   width: 250px;
   color: var(--element1);
   transition: color 0.3s;
@@ -67,12 +67,13 @@
   }
 
   .item {
+    font-size: 2rem;
     justify-content: center;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
 
   .name {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .title {

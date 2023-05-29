@@ -4,7 +4,7 @@
 }
 
 .title {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--element1);
   transition: 0.3s;
@@ -12,7 +12,7 @@
 
 .date {
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--element4);
   transition: 0.3s;
 }

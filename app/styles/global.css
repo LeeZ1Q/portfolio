@@ -12,7 +12,7 @@ p {
 }
 
 :root {
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 a {
@@ -70,7 +70,7 @@ a {
 
 /* Dark Mode */
 [color-mode='dark'] {
-  --surface1: #ebebeb;
+  --surface1: #7d7d7d4d;
   --surface2: #333333;
   --surface3: #121212;
   --surface4: #191919;

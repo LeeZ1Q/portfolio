@@ -28,13 +28,13 @@ const Content = () => {
 				<article>
 					<p>
 						I love playing around with code, discovering new technologies, and
-						building fun and useful projects. On my projects page, you can find
+						building fun and useful projects. On the projects page, you can find
 						my projects along with their Github repositories and online demos.
 					</p>
 				</article>
 				<Divider />
 				<article>
-					<p>Outside of programming,I enjoy all the beutiful things.</p>
+					<p>Outside of programming, I enjoy all the beutiful things.</p>
 					<p>
 						Join me on my journey as I explore the world of technology and
 						beyond.

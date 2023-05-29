@@ -19,7 +19,10 @@ const cav = Caveat({
 
 export default function RootLayout({ children }) {
 	return (
-		<html className={`${ibm.variable} ${cav.variable}`}>
+		<html
+			className={`${ibm.variable} ${cav.variable}`}
+			suppressHydrationWarning={true}
+		>
 			<body>
 				<Providers>
 					<NavBar />
