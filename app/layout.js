@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import NavBar from "./components/NavBar";
 import "./styles/global.css";
 import "./styles/markdown.css";
 import { Providers } from "./theme-provider";
-
 import { IBM_Plex_Sans, Caveat } from "next/font/google";
 
 const ibm = IBM_Plex_Sans({
