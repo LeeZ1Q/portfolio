@@ -186,7 +186,7 @@ React Fiber 实现这种工作进度保存的原理是通过**将任务拆分成
 
 
 
-![React Fiber relationship](./notes.assets/5f6b3409f5628c49d6136dee_React Fiber relationship.jpeg)
+![React Fiber relationship](https://s2.loli.net/2023/05/27/zxW68vIt3FeZyig.jpg)
 
 ## step5.分离Render和Commit阶段
 
