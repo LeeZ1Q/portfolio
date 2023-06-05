@@ -6,8 +6,6 @@ date: 2023-05-31
 
 ---
 
-# U don't know JS
-
 ## book1: get started
 
 ### ch2
@@ -28,7 +26,7 @@ const不要与对象一起用
 
 闭包里的变量就是真实的变量，不是快照
 
-原型链≈继承
+原型链 ≈ 继承
 
 
 
@@ -95,20 +93,20 @@ JS引擎如何将单独的文件拼接在一起？
 
 - 借助全局作用域
 
-```jsx
-var moduleOne = (function one(){
-    // ..
-})();
-var moduleTwo = (function two(){
-    // ..
+    ```jsx
+    var moduleOne = (function one(){
+        // ..
+    })();
+    var moduleTwo = (function two(){
+        // ..
 
-    function callModuleOne() {
-        moduleOne.someMethod();
-    }
+        function callModuleOne() {
+            moduleOne.someMethod();
+        }
 
-    // ..
-})();
-```
+        // ..
+    })();
+    ```
 
 
 

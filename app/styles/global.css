@@ -11,6 +11,10 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+}
+
 :root {
   font-size: 1.125rem;
 }
@@ -107,13 +111,13 @@ a {
   License: see project LICENSE
   Touched: 2021
 */
+pre {
+  margin: 10px 0px;
+}
 pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 1em;
-}
-code.hljs {
-  padding: 3px 5px;
 }
 .hljs {
   background: var(--hljs0);
