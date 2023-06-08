@@ -45,24 +45,24 @@ const Content = () => {
 					<p>
 						Find me on {""}
 						<Link
-							href="https://github.com/LeeZ1Q"
-              rel='noreferrer'
-              target="_blank"
+							href='https://github.com/LeeZ1Q'
+							rel='noreferrer'
+							target='_blank'
 							className={utilStyles.textLink}
 						>
 							Github
 						</Link>{" "}
 						and {""}
 						<Link
-							href="https://space.bilibili.com/67972196"
-              rel='noreferrer'
-              target="_blank"
+							href='https://space.bilibili.com/67972196'
+							rel='noreferrer'
+							target='_blank'
 							className={utilStyles.textLink}
 						>
 							bilibili
 						</Link>
 					</p>
-					<p>Mail me at leez1q@qq.com</p>
+					<p>Mail me at lee.ziqi@foxmail.com</p>
 				</article>
 			</article>
 		</div>
