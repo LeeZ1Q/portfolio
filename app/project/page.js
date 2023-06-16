@@ -22,7 +22,7 @@ const Project = () => {
 					<Item
 						name='mini-react'
 						description='A mini React that implements React core concepts.'
-						icon='&#xe64b;'
+						icon='&#xe712;'
 						repo='https://github.com/LeeZ1Q/mini-react'
 					/>
 					<Item
@@ -32,15 +32,9 @@ const Project = () => {
 						repo='https://github.com/LeeZ1Q/mini-redux'
 					/>
 					<Item
-						name='react-dnd-playground'
-						description='React drag and drop examples playground.'
-						icon='&#xe704;'
-						repo='https://github.com/LeeZ1Q/react-dnd-playground'
-					/>
-					<Item
 						name='Book Finder'
 						description='A Book Searching Website using Google Book API.'
-						icon='&#xe61f;'
+						icon='&#xe605;'
 						repo='https://github.com/LeeZ1Q/bookfinder'
 					/>
 					<Item
@@ -52,6 +46,18 @@ const Project = () => {
 				</div>
 				<p className={styles.title}>Demo</p>
 				<div className={styles.list}>
+					<Item
+						name='debounce-throttle-demo'
+						description='A playground to try debouncing and throtting.'
+						icon='&#xe653;'
+						repo='https://github.com/LeeZ1Q/debounce-throttle-playground'
+					/>
+					<Item
+						name='react-dnd-playground'
+						description='React drag and drop examples playground.'
+						icon='&#xe704;'
+						repo='https://github.com/LeeZ1Q/react-dnd-playground'
+					/>
 					<Item
 						name='dark-mode-toggle'
 						description='A dark mode demo.'

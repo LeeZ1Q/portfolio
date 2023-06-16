@@ -1,44 +1,44 @@
-import Link from "next/link";
-import styles from "../styles/Nav.module.css";
-import ThemeToggle from "./ThemeToggle";
+import Link from 'next/link';
+import styles from '../styles/Nav.module.css';
+import ThemeToggle from './ThemeToggle';
 
 const NavBar = () => {
 	return (
 		<div className={styles.container}>
 			<Link
-				href="/"
+				href='/'
 				className={styles.signature}
 			>
 				Lee
 			</Link>
 			<nav className={styles.nav}>
 				{/* Mobile Icon */}
-				<Link href="/blog">
+				<Link href='/blog'>
 					<span className={`iconfont ${styles.mobile} ${styles.icon}`}>
 						&#xe634;
 					</span>
 				</Link>
-				<Link href="/project">
+				<Link href='/project'>
 					<span className={`iconfont ${styles.mobile} ${styles.icon}`}>
-						&#xe650;
+						&#xe8d9;
 					</span>
 				</Link>
 
 				{/* Laptop Link */}
 				<Link
-					href="/"
+					href='/'
 					className={`${styles.link} ${styles.laptop}`}
 				>
 					Me
 				</Link>
 				<Link
-					href="/blog"
+					href='/blog'
 					className={`${styles.link} ${styles.laptop}`}
 				>
 					Blog
 				</Link>
 				<Link
-					href="/project"
+					href='/project'
 					className={`${styles.link} ${styles.laptop}`}
 				>
 					Projects
@@ -46,17 +46,17 @@ const NavBar = () => {
 
 				{/* Other Icon */}
 				<Link
-					href="https://github.com/LeeZ1Q"
-					rel="noreferrer"
-					target="_blank"
+					href='https://github.com/LeeZ1Q'
+					rel='noreferrer'
+					target='_blank'
 					className={`iconfont ${styles.icon}`}
 				>
-					&#xe885;
+					&#xe972;
 				</Link>
 				<Link
-					href="https://space.bilibili.com/67972196"
-					rel="noreferrer"
-					target="_blank"
+					href='https://space.bilibili.com/67972196'
+					rel='noreferrer'
+					target='_blank'
 					className={`iconfont ${styles.icon}`}
 				>
 					&#xe66d;

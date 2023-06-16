@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
-import styles from "../styles/Nav.module.css";
+import React, { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
+import styles from '../styles/Nav.module.css';
 
 const ThemeToggle = () => {
 	const [mounted, setMounted] = useState(false);
@@ -11,13 +11,13 @@ const ThemeToggle = () => {
 	useEffect(() => setMounted(true), []);
 
 	if (!mounted)
-		return <span className={`iconfont ${styles.icon} loading`}> &#xe635;</span>;
+		return <span className={`iconfont ${styles.icon} loading`}> &#xe600;</span>;
 
 	const toggleTheme = () => {
-		if (theme === "light") {
-			setTheme("dark");
+		if (theme === 'light') {
+			setTheme('dark');
 		} else {
-			setTheme("light");
+			setTheme('light');
 		}
 	};
 
@@ -26,7 +26,7 @@ const ThemeToggle = () => {
 			className={`iconfont ${styles.icon}`}
 			onClick={toggleTheme}
 		>
-			&#xe635;
+			{theme === 'light' ? '\ue600' : '\ue6dc'}
 		</span>
 	);
 };
