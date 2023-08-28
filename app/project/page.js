@@ -14,6 +14,18 @@ const Project = () => {
 				<p className={styles.title}>Projects</p>
 				<div className={styles.list}>
 					<Item
+						name='APIKnight'
+						description='A http APIs management tool.'
+						icon='&#xe7e1;'
+						repo='https://github.com/ApiKnight/ApiKnight'
+					/>
+					<Item
+						name='NextGPT'
+						description='A chatGPT demo with Next.js.'
+						icon='&#xe618;'
+						repo='https://github.com/LeeZ1Q/nextgpt'
+					/>
+					<Item
 						name='tiny-compiler'
 						description='A super tiny compiler (only 200 lines).'
 						icon='&#xe727;'
