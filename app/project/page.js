@@ -46,7 +46,7 @@ const Project = () => {
 					<Item
 						name='Book Finder'
 						description='A Book Searching Website using Google Book API.'
-						icon='&#xe605;'
+						icon='&#xe621;'
 						repo='https://github.com/LeeZ1Q/bookfinder'
 					/>
 					<Item
